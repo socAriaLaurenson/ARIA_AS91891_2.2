@@ -1,0 +1,95 @@
+index.html: 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>10 Heuristics</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="nav-title">10 Heuristics</h1>
+        <ul>
+          <li><a href="rules1-2.html">Rules: 1-2</a></li>
+          <li>|</li>
+          <li><a href="rules3-4.html">3-4</a></li>
+          <li>|</li>
+          <li><a href="rules5-6.html">5-6</a></li>
+          <li>|</li>
+          <li><a href="rules7-8.html">7-8</a></li>
+          <li>|</li>
+          <li><a href="rules9-10.html">9-10</a></li>
+          <li>|</li>
+          <li><a href="home.html" class="active">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Hero section -->
+    <section class="hero">
+      <img src="black_keyboard.png" alt="black keyboard hero image" class="hero-img">
+    </section>
+  </body>
+</html>
+
+CSS:
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+}
+
+.navbar {
+  background-color: #ff9898ed; /* soft pink */
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* keeps title left, nav right */
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: 700; /*bold */
+  font-family: "Lora", serif;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px; /* spacing between items */
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700; /* bold */
+  font-family: "Lora", serif;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
