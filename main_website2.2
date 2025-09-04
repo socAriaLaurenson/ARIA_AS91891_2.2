@@ -1,4 +1,3 @@
-index.html: 
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,6 +33,45 @@ index.html:
     <section class="hero">
       <img src="black_keyboard.png" alt="black keyboard hero image" class="hero-img">
     </section>
+    
+    <!-- Main content section -->
+    <main class="content">
+      <section class="top-row">
+        <div class="text-box">
+          <h2>HCI Rules of Thumb</h2>
+          <p><strong>Useability and User Interface Guidelines:</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet lorem 
+            ut urna ullamcorper suscipit. Fusce at neque vel sapien egestas porttitor.</p>
+        </div>
+        <div class="video-box">
+          <!-- Replace with embedded YouTube later -->
+          <div class="video-placeholder">Video Placeholder</div>
+        </div>
+      </section>
+
+      <section class="bottom-row">
+        <div class="info-box">
+          <!--  Icon Image Placeholder -->
+          <img src="icon1.png" alt="Real world implications icon" class="icon-img">
+          <h3>Real world implications</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="info-box">
+          <!--  Icon Image Placeholder -->
+          <img src="icon2.png" alt="HCI rules icon" class="icon-img">
+          <h3>Why do we need HCI rules?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="info-box">
+          <!--  Icon Image Placeholder -->
+          <img src="icon3.png" alt="Error prevention icon" class="icon-img">
+          <h3>Error prevention</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
 
@@ -93,3 +131,66 @@ body {
   height: auto;
   display: block;
 }
+
+/* =========================
+Content Section
+========================= */
+.content {
+  padding: 20px;
+}
+
+/* Top row: text + video */
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  flex: 2;
+  background: #f6e6a9; /* cream-yellow */
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.video-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Bottom row: 3 boxes */
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-box {
+  background: #f6e6a9; /* cream-yellow */
+  padding: 15px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* Icon images */
+.icon-img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+  
